@@ -1,0 +1,72 @@
+
+body{
+    font-family: sans-serif;
+    color:white;
+    background-image: url("https://i.pinimg.com/originals/c0/e7/4c/c0e74c0bca0fb76d87da61d95f7c10d8.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tint{
+    background-color:rgba(98, 82, 189, 0.74) ;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+#title{
+    text-align: center;
+}
+#description{    
+    text-align: center;
+    font-style: italic;
+}
+form{
+    padding-top: 40px;
+    background-color:rgba(0, 0, 0, 0.555) ;
+    width: 100%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+input:invalid{
+    border:solid red;
+    color:red;
+}
+input:valid {
+    border:none;
+    color: black;
+}
+/*set these to be on own line*/
+.inputBlock{
+    width:90%;
+    margin: auto;
+    border:solid blue;
+}
+.inputBlock label{
+    display:block;
+}
+.textInput{
+    display:block;
+    width:100%;
+    padding: 10px;
+    border-radius: 5px;
+    border:solid green;
+    box-sizing: border-box;
+}
+#checkBoxDiv{
+    width:90%;
+    margin: auto;
+}
+#radioDiv{
+    width:90%;
+    margin: auto;
+}
+.labelText{
+    font-size: 18px;
+}

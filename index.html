@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="tint">
+    <h1 id="title">Survey</h1>
+    <p id="description">Enter your contact information</p>
+    <form id="survey-form" action="">
+        <div class="inputBlock">
+            <label for="name" id="nameLabel" class="labelText">Enter name:</label>
+            <input class="textInput" type="text" id="name" placeholder="Joe">
+        </div>
+        <div class="inputBlock">
+            <label for="email" id="emailLabel" class="labelText">Enter email:</label>
+            <input class="textInput" type="text" id="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="hello@website.com"><!--Email regex-->
+        </div>
+        <div class="inputBlock">
+            <label for="number" id="numberLabel" class="labelText">Enter phone number:</label>
+            <input class="textInput" type="tel" id="number" pattern="[0-9]{10}" placeholder="1234567890">
+        </div>
+        <div class="inputBlock">
+            <p class="labelText">Which option best describes your current role?</p>
+            <select name="dropdown" class="textInput">
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Full time learner</option>
+            </select>
+        </div>
+        <div id="radioDiv">
+            <p class="labelText">Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" name="rec"><label>Definitely</label><br>
+            <input type="radio" name="rec"><label>Maybe</label><br>
+            <input type="radio" name="rec"><label>Not sure</label><br>
+        </div>
+        <div class="inputBlock">
+            <p class="labelText">What is your favorite feature of freeCodeCamp?</p>
+            <select name="dropdown" class="textInput">
+                <option>Red</option>
+                <option>Purple</option>
+                <option>Blue</option>
+            </select>
+        </div>
+        <div id="checkBoxDiv">
+            <p class="labelText">What would you like to see improved? (Check all that apply)</p>
+            <input type="checkbox" value="frontend"><label>Front-end Projects</label><br>
+            <input type="checkbox" value="backend"><label>Back-end Projects</label><br>
+            <input type="checkbox" value="challenges"><label>Challenges</label><br>
+            <input type="checkbox" value="courses"><label>Courses</label><br>
+        </div>
+        <div class="inputBlock">
+        <label for="comments"  class="labelText">Comments:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+    </ul>
+    </form>
+</div>
+</body>
+</html>
