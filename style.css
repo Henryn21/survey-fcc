@@ -8,17 +8,19 @@ body{
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0%;
+    margin: 0%;
 }
 #tint{
     background-color:rgba(98, 82, 189, 0.74) ;
     height: 100%;
     width: 100%;
     z-index: 1;
-    position: fixed;
-    top: 0px;
+    /* position: fixed; */
     left: 0px;
 }
 #title{
+    padding-top:50px;
     text-align: center;
 }
 #description{    
@@ -46,7 +48,9 @@ input:valid {
 .inputBlock{
     width:90%;
     margin: auto;
-    border:solid blue;
+    /* border:solid blue; */
+    padding-bottom:40px;
+    font-size: 18px;
 }
 .inputBlock label{
     display:block;
@@ -56,17 +60,39 @@ input:valid {
     width:100%;
     padding: 10px;
     border-radius: 5px;
-    border:solid green;
     box-sizing: border-box;
+    font-size: 18px;
 }
 #checkBoxDiv{
     width:90%;
     margin: auto;
+    font-size: 20px;
+    padding-bottom:40px;
 }
 #radioDiv{
     width:90%;
     margin: auto;
+    font-size: 20px;
+    padding-bottom:40px;
 }
 .labelText{
-    font-size: 18px;
+    font-size: 20px;
+}
+#comments{
+    resize: none;
+    width: 100%;
+}
+#submit{
+    background-color: rgb(73, 199, 73);
+    border: none;
+    color:white;
+    width:100%;
+    padding:12px;
+    font-size: 20px ;
+}
+/*Desktop media queries*/
+@media only screen and (min-width:600px){
+   form{
+    width:800px;
+   }
 }

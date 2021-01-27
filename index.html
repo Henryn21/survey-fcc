@@ -9,8 +9,8 @@
 </head>
 <body>
 <div id="tint">
-    <h1 id="title">Survey</h1>
-    <p id="description">Enter your contact information</p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for the feedback</p>
     <form id="survey-form" action="">
         <div class="inputBlock">
             <label for="name" id="nameLabel" class="labelText">Enter name:</label>
@@ -34,9 +34,9 @@
         </div>
         <div id="radioDiv">
             <p class="labelText">Would you recommend freeCodeCamp to a friend?</p>
-            <input type="radio" name="rec"><label>Definitely</label><br>
-            <input type="radio" name="rec"><label>Maybe</label><br>
-            <input type="radio" name="rec"><label>Not sure</label><br>
+            <input id="def" type="radio" name="rec"><label for="def"> Definitely</label><br>
+            <input id="maybe" type="radio" name="rec"><label for="maybe"> Maybe</label><br>
+            <input id="not"type="radio" name="rec"><label for="not"> Not sure</label><br>
         </div>
         <div class="inputBlock">
             <p class="labelText">What is your favorite feature of freeCodeCamp?</p>
@@ -54,10 +54,12 @@
             <input type="checkbox" value="courses"><label>Courses</label><br>
         </div>
         <div class="inputBlock">
-        <label for="comments"  class="labelText">Comments:</label>
-        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <label for="comments"  class="labelText">Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         </div>
-        <button id="submit">Submit</button>
+        <div class="inputBlock">
+            <button id="submit">Submit</button>
+        </div>
     </ul>
     </form>
 </div>
